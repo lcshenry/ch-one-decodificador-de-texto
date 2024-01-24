@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: lightblue;
+}
+.corpo__conteudo{
+    margin: 0 15%;
+    max-width: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 15%;
+    gap: 40px;
+}
+
+.corpo__conteudo__texto{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 50px;
+}
+
+.corpo__conteudo__texto > textarea{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #0A3871;
+    outline: none;
+}
+
+.corpo_conteudo__botoes > p{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.corpo_conteudo__botoes{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.corpo__conteudo__botoes__cripto{
+    display: flex;
+    gap: 8px;
+}
+.corpo_conteudo__botoes__botaoA{
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    gap: 8px;
+    text-align: center;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+.corpo_conteudo__botoes__botaoB{
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    gap: 8px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+.corpo__conteudo__mensagem{
+    background-color: white;
+    width: 35%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 16px;
+}
+
+.corpo__conteudo__mensagem > img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.corpo__conteudo__mensagem__subtitulo{
+    font-size: 14px;
+    justify-content: center;
+}
+
+.corpo__conteudo__mensagem__info{
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    body{
+        background-color: lightgray;
+    }
+
+    .corpo__conteudo{
+        border: 1px solid gray;
+        flex-direction: column;
+        width: 60%;
+        margin: 5% auto;
+        height: 100%;
+        gap: 0;
+        
+    }
+    
+    .corpo__conteudo__texto > textarea{
+        text-align: center;
+        width: 90%;
+        height: 500px;
+        padding: 0 5%;
+        margin: 0 auto;
+        
+    }
+    .corpo__conteudo__mensagem {
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 5% 5%;
+        border: 1px solid gray;
+        
+        
+    }
+    .corpo_conteudo__botoes{
+        
+        
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        gap: 15px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 5% 5%;
+    }
+    .corpo_conteudo__botoes__botaoA{
+        width: 90%;
+        height: 40px;
+
+    }
+    .corpo_conteudo__botoes__botaoB{
+        width: 90%;
+        height: 40px;
+
+    }
+
+    .corpo__conteudo__botoes__cripto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .corpo__conteudo__mensagem__subtitulo{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 2000px){
+    body{
+        background-color: lightcyan;
+    }
+
+    .corpo__conteudo{
+        border: 1px solid gray;
+        flex-direction: row;
+        width: 60%;
+        margin: 5% auto;
+        height: 100%;
+        gap: 30%;
+        
+    }
+    
+    .corpo__conteudo__texto > textarea{
+        text-align: center;
+        width: 100%;
+        height: 500px;
+        padding: 0 5%;
+        margin: 0 auto;
+        
+    }
+    .corpo__conteudo__mensagem {
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 5% 5%;
+        border: 2px solid gray;
+        
+        
+    }
+    .corpo_conteudo__botoes{
+        
+        
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        gap: 15px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 5% 5%;
+    }
+    .corpo_conteudo__botoes__botaoA{
+        width: 90%;
+        height: 40px;
+
+    }
+    .corpo_conteudo__botoes__botaoB{
+        width: 90%;
+        height: 40px;
+
+    }
+
+    .corpo__conteudo__botoes__cripto{
+        flex-direction: row;
+        align-items: center;
+    }
+    .corpo__conteudo__mensagem__subtitulo{
+        text-align: center;
+    }
+}
